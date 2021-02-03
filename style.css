@@ -1,0 +1,31 @@
+
+.wrapper{
+    width: 970px;
+    height: 2000px;
+    background-color: grey;
+}
+
+.box1{
+    width: 970px;
+    height: 170px; 
+    background-color: aqua;
+    text-align: center;
+}
+
+.box2{
+    width: 970px;
+    height: 170px; 
+    background-color:coral;
+    text-align: center;
+}
+
+.box3{
+    width: 970px;
+    height: 170px; 
+    background-color:hotpink;
+    text-align: center;
+}
+
+.formatH2{
+    justify-content: center;
+}

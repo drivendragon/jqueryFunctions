@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JQuery Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <div class="demo-container">
+                <p>All new content. <em>You bet!</em></p>
+            </div>
+            <div class="box1">
+                <h2 class="formatH2">AddClass</h2>
+                <button class="pressAddClass">Add Class</button>
+                <h5 id="red">Click the button to add class 'red' to this paragraph</h5>
+                <h6 id="hide">This text will hide once the button is clicked.</h6>
+            </div>
+            <div class="box2">
+                <h2 class="formatH2">SideToggle</h2>
+                <button class="pressSlideToggle">Slidetoggle</button>
+                <h5 id="slideToggle">Click the button to slidetoggle a hidden image</h5>
+                <p style="display: none">Show function working using jquery</p>
+            </div>
+            <div class="box3">
+                <h2 class="formatH2">Append</h2>
+                <button class="pressAppend">Append</button>
+                <h5 id="append">Click the button to append a new paragraph!</h5>
+            </div>
+
+            <div id="clickmeToggle">
+                Click here to Toggle
+            </div>
+            <img id="bookToggle" src="book.png" alt="" width="100" height="123">
+            <!---
+            <div id="clickmeSlide">
+                Click here to Slide Down
+            </div>
+            <img id="book" src="book.png" alt="" width="100" height="123">-->
+
+            <div id="clickmeSlideUp">
+                Click here to Slide Up
+              </div>
+              <img id="book" src="book.png" alt="" width="100" height="123">
+
+              <!--
+              <div id="clickmeFade">
+                Click here to see Fade In 
+              </div>
+              <img id="book" src="book.png" alt="" width="100" height="123"> -->
+
+              <div id="clickmeFadeOut">
+                Click here to fade out
+              </div>
+              <img id="book" src="book.png" alt="" width="100" height="123">
+              <br>
+              <br>
+              <p> is what I said...</p><b>Word</b>
+              <br>
+              <br>
+              <p>I would like to say: </p>
+              <br>
+              <input type="text" value="some text">
+              <p class="valExample"></p>
+              <br>
+              <br>
+              <p class="textExample"><b>This is setup to see the text example</b> Paragraph for text example here</p>
+
+          
+        </div>
+    </body> 
+    <script src="script.js"></script>
+</html>     
+
+
+<!---  https://api.jquery.com/
+Note that for the manipulation jQuery functions, there are few distinctions to make. The functions .html() and .text() are different in a key way: .html() can be used to insert new HTML markup, meaning new HTML tags. .text() is used to get or set just the text value of an HTML element. For instance, you could use .text() to change the text of a paragraph, but if you want to put an ordered list inside of the paragraph, you need to use .html() to insert the appropriate tags into the paragraph.
+
+Similarly, .append() and .html() do nearly the same thing; they both can alter the HTML content of the selected item. The function .append will add markup to the element in question, whereas .html() will overwrite the markup with whatever is run inside the parentheses. So keep in mind that if you want to add content, use .append(), but if you want to replace content, use .html().
+
+
+Study only these tags!
+Effects (functions to do some cool animation effects)
+.hide()
+.show()
+.toggle()
+.slideUp()
+.slideDown()
+.slideToggle()
+.fadeOut()
+.fadeIn()
+CSS (adding or removing a class for any HTML element/DOM)
+.addClass()
+.removeClass()
+.css()
+Manipulation (retrieving or setting value or text in any HTML element)
+.after()
+.append()
+.prepend()
+.attr()
+.before()
+.html()
+.text()
+.val()
+Events (functions to handle an event)
+.click()
+.on()
+.live() - deprecated (JQuery 1.7)
+.hover()
+
+
+
+Use this instead of the below:
+
+
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        //attach a click event listener to all the img tags when the document is ready
+            $('img').click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <img src="image1.jpg" />
+    <img src="image2.jpg" />
+    <img src="image3.jpg" />
+    <img src="image4.jpg" />
+    <img src="image5.jpg" />
+</body>
+
+
+
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#image1').click(function(){
+                $('#image1').hide();
+            });
+            $('#image2').click(function(){
+                $('#image2').hide();
+            });
+            $('#image3').click(function(){
+                $('#image3').hide();
+            });
+            $('#image4').click(function(){
+                $('#image4').hide();
+            });
+            $('#image5').click(function(){
+                $('#image5').hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <img src="image1.jpg" id="image1" />
+    <img src="image2.jpg" id="image2" />
+    <img src="image3.jpg" id="image3" />
+    <img src="image4.jpg" id="image4" />
+    <img src="image5.jpg" id="image5" />
+</body>
+
+-->
